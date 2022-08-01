@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: avakar/create-deployment@v1
         with:
-          auto_merge: false
+          auto_merge: true
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
