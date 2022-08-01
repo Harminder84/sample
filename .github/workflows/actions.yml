@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: actions
 on: [push]
 jobs:
   release:
@@ -7,6 +7,6 @@ jobs:
       - uses: avakar/create-deployment@v1
         with:
           auto_merge: true
-          required_contexts: false
+          required_contexts: true
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
