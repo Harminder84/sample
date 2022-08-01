@@ -1,5 +1,5 @@
 name: deploy-event
-on: deploy
+on: push
 jobs:
   deploy:
     runs-on: ubuntu-latest
